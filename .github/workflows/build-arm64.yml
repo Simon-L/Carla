@@ -16,3 +16,9 @@ jobs:
         run: make features
       - name: make
         run: make -j $(nproc)
+      - name: make install
+        run: make install PREFIX="" DESTDIR=./pfx
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-arm64 zip
+          path: ./pfx
