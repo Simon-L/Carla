@@ -10,7 +10,7 @@ jobs:
       - name: Set up dependencies
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -yqq g++-multilib libasound2-dev libfluidsynth-dev libgl1-mesa-dev liblo-dev libmagic-dev libpulse-dev libsdl2-dev libsndfile1-dev libx11-dev libxcursor-dev libxext-dev libxrandr-dev make pkg-config pyqt5-dev-tools qtbase5-dev
+          sudo apt-get install -yqq libasound2-dev libfluidsynth-dev libgl1-mesa-dev liblo-dev libmagic-dev libpulse-dev libsdl2-dev libsndfile1-dev libx11-dev libxcursor-dev libxext-dev libxrandr-dev make pkg-config pyqt5-dev-tools qtbase5-dev
           sudo apt-get install -yqq libx11-6 libxext6
       - name: make features
         run: make features
